@@ -1,0 +1,22 @@
+{
+  "name": "feature-switches",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22 <26"
+  },
+  "scripts": {
+    "start": "node dist/server.js",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "build": "tsc -p tsconfig.json"
+  },
+  "dependencies": {
+    "express": "5.2.1"
+  },
+  "devDependencies": {
+    "typescript": "6.0.3",
+    "@types/node": "24.13.4",
+    "@types/express": "5.0.3"
+  }
+}
